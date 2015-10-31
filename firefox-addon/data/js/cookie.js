@@ -19,6 +19,7 @@ function getCookie(cname) {
 function setCookie(cname, cvalue, exdays) {
 
     var cookieStr = formatCookie(cname, cvalue, exdays);
+    console.log("setting cookie to document-"+cookieStr);
     document.cookie = cookieStr;
 }
 
@@ -27,14 +28,18 @@ function injectCookie(cname, cvalue, exdays){
     var strInject = 'document.cookie =' +"'" + formatCookie(cname, cvalue, exdays) +';'+"'";
 	console.log(strInject);
 
+    console.log("Here is the document cookie"+document.cookie);
 
-	chrome.tabs.getSelected(null, function(tab) {
-		chrome.tabs.executeScript(tab.id,{
-			code:strInject
-		},function(){
-		/*Do Nothing*/
-		});
-	});
+   // Services.cookies.add(strInject);
+
+
+	//chrome.tabs.getSelected(null, function(tab) {
+	//	chrome.tabs.executeScript(tab.id,{
+	//		code:strInject
+	//	},function(){
+	//	/*Do Nothing*/
+	//	});
+	//});
 }
 
 /** Returns a formatted cookie from given params*/

@@ -1,7 +1,8 @@
 
 
 if(getCookie("sidSession")==="true"){	/*TODO Manipulate Cookies with a better approach*/
-	window.open('main.html','_self');
+	//send message to popup the logout screen
+	self.port.emit("logout_popup", "popup logout html");
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,8 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
 						console.log("Authentication success");
 						setCookie("sidSession","true",3);	//expires after 3 days if not logged out
 						injectCookie("sidSession","true",3); 	//inject to save cookie inside the main browser
-						var myMessagePayload = "some data";
-						self.port.emit("myMessage", myMessagePayload);
+
+						//send message to popup the logout screen
+						self.port.emit("logout_popup", "popup logout html");
 
 					}else{
 
