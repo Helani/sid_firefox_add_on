@@ -1,12 +1,31 @@
+
+img.premium{
+	top:30px;
+	left:30px;
+	width:180px;
+	height:180px;
+}
+
+canvas.drop_chart{
+	width: 150px;
+	height: 150px;
+	min-width: 150px;
+	min-height: 150px;
+	margin-top:50px;
+	margin-left:50px;
+}
+
 img.profIcon {
 	position:absolute;
-	left:120px;
-	top:-38px;
 	z-index:1;
 	display:none;
-	height: 60px;
-    width: 60px;
+	height: inherit;
+    width: inherit;
+	left:0px;
+	top:0px;
 }
+
+
 
 img.friendProfIcon{
 	position:absolute;
@@ -44,7 +63,7 @@ div.claim_d{
 }
 
 div.claimWork_d{
-	position:absolute;
+	position:relative;
 	z-index:1;
 	height: 40px;
     width: 40px;
@@ -52,48 +71,13 @@ div.claimWork_d{
 	top:20px;
 }
 
-div.claimEvents_d{
-	position:absolute;
-	z-index:1;
-	height: 20px;
-    width: 20px;
-	top:-20px;
-}
-
-div.claimOverview_d{
-	position:absolute;
-	z-index:1;
-	height: 20px;
-    width: 20px;
-	top:-20px;
-	left:-200px;
-}
-
-div.popupChart{
-    position: absolute;
-    top: 0px;
-    left: 110px;
-    height: 108px;
-    width: 108px;
-    background-color: white;
-}
-
-li.listElement{
-	width:110px;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-}
-
-
 img.popup{
 	height: 30px;
     width: 30px;
 }
 
 img.claimWork{
-	position:absolute;
+	position:relative;
 	z-index:1;
 	height: 40px;
     width: 40px;
@@ -101,21 +85,22 @@ img.claimWork{
 	top:15px;
 }
 
-img.claimEvents{
-	position:relative;
+div.claimMain_d{
+	position:absolute;
 	z-index:1;
 	height: 20px;
     width: 20px;
+	left:-570px;
 	top:-20px;
 }
 
-img.claimOverview{
+img.claimMain{
 	position:relative;
 	z-index:1;
 	height: 20px;
     width: 20px;
+	left:-570px;
 	top:-20px;
-	left:-200px;
 }
 
 img.ring{
@@ -144,7 +129,7 @@ ul.dropElement{
 	min-width: 130px;
 }
 
-canvas.drop_chart{
+canvas.sid_chart{
 	width: 150px;
 	height: 150px;
 	min-width: 150px;
@@ -153,75 +138,58 @@ canvas.drop_chart{
 	margin-left:50px;
 }
 
-canvas.mini_chart{
-	width: 100px;
-	height: 100px;
-	min-width: 100px;
-	min-height: 100px;
-	margin-top:5px;
-	margin-left:5px;
-}
-
 img.popup{
 	position:absolute;
 }
+
+div.Main{
+	position:absolute;
+	height:auto;
+	width:auto;
+	left:550px;
+}
+
+
 
 img.dropHeader{
 	width:250px;
 }
 
-img.chartTip{
-	width:20px;
-	position:absolute;
-}
 
-div.Events{
-	position:absolute;
-	height:auto;
-	width:auto;
-	left:550px;
-}
-
-div.Overview{
-	position:absolute;
-	height:auto;
-	width:auto;
-	left:550px;
-}
-
-a.myButton {
-	background-color:#f6f6f6;
-	width:200px;
-	height:40px;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:14px;
-	font-weight:bold;
-	text-align:center;
-	padding:2px 24px;
-	text-decoration:none;
-	border:1px solid #ffffff;
-}
-.myButton:hover {
-	background-color:#ededed;
-	text-decoration:none;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
 
 a.verA{
 	width:inherit;
-	color:#666666;
+	height:15px;
 }
 a.neuA{
 	width:inherit;
-	color:#666666;
+	height:15px;
 }
 a.refA{
 	width:inherit;
-	color:#666666;
+	height:15px;
 }
+
+div.popupChart{
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    height: 108px;
+    width: 108px;
+    background-color: white;
+}
+
+
+canvas.mini_chart{
+	width: inherit;
+	height: inherit;
+	min-width: 99px;
+	min-height: 99px;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+li.listElement{
+	width:110px;
+}
+

@@ -1,5 +1,5 @@
 
-
+console.log("-------------Session--------------------"+getCookie("sidSession"));
 if(getCookie("sidSession")==="true"){	/*TODO Manipulate Cookies with a better approach*/
 	//send message to popup the logout screen
 	self.port.emit("logout_popup", "popup logout html");
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				return;
 			}
 
-			$.post("https://id.projects.mrt.ac.lk:9000/authenticate",
+			$.post("https://sid.projects.mrt.ac.lk:9000/authenticate",
 				{
 					"username": usr.value,
 					"password": pwd.value

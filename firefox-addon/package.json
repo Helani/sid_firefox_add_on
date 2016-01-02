@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "A basic add-on",
   "main": "index.js",
-  "author": "Helani",
+  "author": "Daham  Pathiraja",
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
@@ -17,7 +17,7 @@
     "http": "0.0.0"
   },
   "permissions": {
-    "cross-domain-content": ["https://id.projects.mrt.ac.lk:9000"]
+    "cross-domain-content": ["https://sid.projects.mrt.ac.lk:9000"]
   }
 
 }
