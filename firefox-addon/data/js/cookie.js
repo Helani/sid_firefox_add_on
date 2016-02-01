@@ -1,5 +1,5 @@
 
-/**Method to get a cookie*/
+/**This is the method to get a cookie*/
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -15,7 +15,7 @@ function getCookie(cname) {
     return "";
 }
 
-/**method to set a cookie*/
+/**This is the method to set a cookie*/
 function setCookie(cname, cvalue, exdays) {
 
     var cookieStr = formatCookie(cname, cvalue, exdays);
@@ -23,7 +23,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cookieStr;
 }
 
-/** Inject cookie to main browser*/
+/** This is the method to inject cookie to main browser*/
 function injectCookie(cname, cvalue, exdays){
     var strInject = 'document.cookie =' +"'" + formatCookie(cname, cvalue, exdays) +';'+"'";
 	console.log(strInject);

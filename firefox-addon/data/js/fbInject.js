@@ -15,7 +15,7 @@ identify();
 
 
 
-/**identify web page and take required actions*/
+/** code to identify web page and take required actions*/
 function identify() {
     console.log(".. Identifying Web Page");
     if (timeLineCName !== null && timeLineHLine !== null) {
@@ -50,7 +50,7 @@ function identify() {
     }
 }
 
-/** Appends sid-rating state over fb profile picture*/
+/** This code appends sid-rating state over fb profile picture*/
 function updateProfPic(manual) {
     if (document.getElementById(fbstrings.sidSign) !== null && !manual) {
         if (document.getElementById(fbstrings.sidSign).src.length > 10) {
@@ -79,7 +79,7 @@ function updateProfPic(manual) {
         });
 }
 
-/** Appends sid-rating state over fb profile picture*/
+/** This code appends sid-rating state over fb profile picture*/
 function updFrndsProfInTimeLine() {
     /**updating friends profile pics*/
     var timelineRecent = document.getElementById(fbstrings.timelineRecent);

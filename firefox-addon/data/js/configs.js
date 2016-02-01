@@ -31,3 +31,5 @@ var fbstrings = {
 var fbSkipStrings = ["Your friend since","Followed by","friends","Friends on","family members","Feeling","Played"];
 
 var fbNonSkipStrings = ["Works","Lives in","From","Born on","Studies","Studied", "In a relationship"];
+
+//this file contains all configuration data

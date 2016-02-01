@@ -1,4 +1,4 @@
-
+//logout
 
 	try{
 		var btnLogout = document.getElementById('btnLogout');		//Log out button in login page
