@@ -1,3 +1,4 @@
+//authentication is handled by this .js file
 
 console.log("-------------Session--------------------"+getCookie("sidSession"));
 if(getCookie("sidSession")==="true"){	/*TODO Manipulate Cookies with a better approach*/
